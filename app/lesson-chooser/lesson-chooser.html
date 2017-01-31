@@ -1,0 +1,27 @@
+<!-- This view is the lesson chooser-->
+<div class="wrapper" ng-controller="lessonChooserCtrl">
+  <div class="chooser-header">
+
+    <h1>Choose your lesson</h1>
+
+  </div>
+
+  <span class="course-name">NP-102</span>
+
+  <div class="lesson-container">
+
+    <span><a class="main-page" href="#!/main-page">main page</span>
+    <span class="course-week"><a href="np102.week1.json"></a></span>
+    <span class="course-week"></span>
+    <span class="course-week"></span>
+    <span class="course-week"></span>
+    <span class="course-week"></span>
+    <span class="course-week"></span>
+
+  </div>
+
+  <p>
+    Showing of 'interpolate' filter:
+    {{ 'Current version is v%VERSION%.' | interpolate }}
+  </p>
+</div>

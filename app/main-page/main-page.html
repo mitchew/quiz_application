@@ -1,0 +1,21 @@
+<!-- This is the application main page -->
+<div class="wrapper" ng-controller="MainPageCtrl">
+    <div class="main-lesson-chooser">
+        <a class="lesson" href="#!/lesson-chooser" ng-model="lesson">{{lesson}}</a>
+    </div>
+    <div class="character-inserter">
+        <span class="text">Insert</span>
+        <span class="character-button">á</span>
+        <span class="character-button">é</span>
+        <span class="character-button">í</span>
+        <span class="character-button">ú</span>
+        <span class="character-button">x&#803;</span>
+    </div>
+    <div class="question-area">
+        <span class="question" ng-model="question">{{question}}</span>
+    </div>
+    <div class="input-area">
+        <input class="user-input" type="text">
+        <button class="submit">Submit</button>
+    </div>
+</div>
