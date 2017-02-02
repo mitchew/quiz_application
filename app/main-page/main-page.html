@@ -5,17 +5,17 @@
     </div>
     <div class="character-inserter">
         <span class="text">Insert</span>
-        <button class="character-button"><strong>á</strong></button>
-        <button class="character-button"><strong>é</strong></button>
-        <button class="character-button"><strong>í</strong></button>
-        <button class="character-button"><strong>ú</strong></button>
-        <button class="character-button"><strong>x&#803;</strong></button>
+        <button class="character-button" ng-click="addCharacter('á')"><strong>á</strong></button>
+        <button class="character-button" ng-click="addCharacter('é')"><strong>é</strong></button>
+        <button class="character-button" ng-click="addCharacter('í')"><strong>í</strong></button>
+        <button class="character-button" ng-click="addCharacter('ú')"><strong>ú</strong></button>
+        <button class="character-button" ng-click="addCharacter('x̣')"><strong>x̣</strong></button>
     </div>
     <div class="question-area">
-        <span class="question" ng-model="question">{{question}}</span>
+        <p class="question" ng-model="question">{{question}}</p>
     </div>
     <div class="input-area">
-        <input class="user-input" type="text">
+        <input class="user-input" type="text" ng-model="string">
         <button class="submit">Submit</button>
     </div>
 </div>
