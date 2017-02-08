@@ -1,5 +1,5 @@
 <!-- This view is the lesson chooser-->
-<div class="wrapper" ng-controller="lessonChooserCtrl">
+<div class="wrapper">
   <div class="chooser-header">
 
     <h1>Choose your lesson</h1>
@@ -10,13 +10,8 @@
 
   <div class="lesson-container">
 
-    <span><a class="main-page" href="#!/main-page">main page</span>
-    <span class="course-week"><a href="np102.week1.json"></a></span>
-    <span class="course-week"></span>
-    <span class="course-week"></span>
-    <span class="course-week"></span>
-    <span class="course-week"></span>
-    <span class="course-week"></span>
+    <a class="main-page" href="#!/main-page">Back to the main page</a>
+    <a href="#!/main-page" class="lesson-button" ng-repeat="page in pages" ng-click="chooseLesson(page)">{{page}}</a>
 
   </div>
 
