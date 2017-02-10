@@ -13,6 +13,7 @@ angular.module('quizApp.main-page', ['ngRoute'])
     // if rootscope lesson doesn't exist, make it a string, otherwise get pages.json questions
     if(!$rootScope.lesson) {
         $rootScope.lesson = 'Choose your Lesson';
+        console.log('$rootScope.lesson set');
     } else {
         // $http.get('lessons/pages.json')
         //     .then(function(response) {
@@ -27,17 +28,21 @@ angular.module('quizApp.main-page', ['ngRoute'])
         //         console.log($scope.questions);
         //     });
     }
+
     if(!$rootScope.questions) {
         $rootScope.questions = [];
+        console.log('$rootScope.questions was created');
     } else {
-        console.log('main-page');
-        console.log('$rootScope.questions is ' + $rootScope.questions);
-        console.log($rootScope.questions);
+        console.log('$rootScope.questions is set');
         $scope.question = $rootScope.questions[0];
     }
-    $scope.string = '';
+
+    if(!$scope.userAnswer) {
+        $scope.userAnswer = '';
+        console.log('$scope.userAnswer was created');
+    }
 
     $scope.addCharacter = function(char) {
-        return $scope.string += char;
+        return $scope.userAnswer += char;
     };
 }]);

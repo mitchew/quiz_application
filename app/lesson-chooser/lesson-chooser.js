@@ -51,28 +51,57 @@ angular.module('quizApp.lesson-chooser', ['ngRoute'])
 
             return array;
     };
+    var separateQuestions = function(item) {
+        var questions = [];
+        var answers = [];
+        console.log('separateQuestions item is ' + item);
+        for(var i = 0; i < item.length; i += 1) {
+            console.log(item[i]);
+            for(var key in item[i]) {
+                console.log(key);
+                questions.push(key);
+                console.log('Added ' + key + ' to temporary questions array');
+                console.log(item[i][key]);
+                answers.push(item[i][key]);
+                console.log('Added ' + item[i][key] + ' to temporary answers array');
+            }
+        }
+        console.log('temporary questions array is ' + questions);
+        console.log('temporary answers array is ' + answers);
+    };
+    var lessonsToQuestions = function(item) {
+        // creates questions array from $scope.data
+        console.log('item is ' + item);
+        for(var key in item) {
+            console.log('item.key is ' + key);
+            // push key and value as an object from a lesson, pushes to $rootScope.questions array
+            if(item.hasOwnProperty(key)) {
+                console.log('item[key] is ' + item[key]);
+                $rootScope.questions.push(item[key]);
+                console.log('$rootScope.questions is ' + $scope.questions);
+                // for(var value in item[key]) {
+                //     console.log('value is ' + value);
+                //     console.log('item[key][value] is ' + item[key][value]);
+                //     if(item[key].hasOwnProperty(value)){
+                //         $rootScope.questions.push('{"question" : ' + value + '", "answer" : ' + item[key][value] + '" }');
+                //         console.log('$rootScope.questions is ' + $scope.questions);
+                //     }
+                // }
+            }
+        }
+    };
     $scope.chooseLesson = function(a) {
         // sets main page lesson chooser
         $rootScope.lesson = a;
         console.log('$rootScope.lesson is ' + a);
-        // creates questions array from $scope.data
-        for(var key in $scope.data) {
-            console.log('$scope.data.key is ' + key);
-            if($scope.data.hasOwnProperty(key)) {
-                console.log('$scope.data[key] is ' + $scope.data[key]);
-                for(var value in $scope.data[key]) {
-                    console.log('value is ' + value);
-                    if($scope.data[key].hasOwnProperty(value)){
-                        $rootScope.questions.push('{' + value + ': ' + $scope.data[key][value] + '}');
-                        console.log('$scope.data[key][value] is ' + $scope.data[key][value]);
-                    }
-                }
-            }
-        }
-        console.log('$rootScope.questions is ' + $rootScope.questions);
-        console.log($rootScope.questions);
+        lessonsToQuestions($scope.data);
+        console.log('Questions extracted');
+        console.log('$rootScope.questions created' + $rootScope.questions);
+        console.log('Shuffling ...');
         $rootScope.questions = shuffle($rootScope.questions);
-        console.log($rootScope.questions);
-        // $scope.separateQuestionsAndAnswers($scope.data)
+        console.log('$rootScope.questions is now ' + $rootScope.questions);
+        console.log('Separating questions');
+        separateQuestions($rootScope.questions);
+        console.log('Questions separated');
     };
 }]);
