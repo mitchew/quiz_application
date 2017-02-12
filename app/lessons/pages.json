@@ -1,10 +1,205 @@
 {
   "page113" : {
-    "téw'ye" : "reside",
-    "téw'yece" : "reside"
+    "question01" : {
+      "question" : "hekí",
+      "answer" : "see"
+    },
+    "question02" : {
+      "question" : "hekíce",
+      "answer" : "see (1st, 2nd person)"
+    },
+    "question03" : {
+      "question" : "'iin hekíce",
+      "answer" : "I see"
+    },
+    "question04" : {
+      "question" : "'iim hekíce",
+      "answer" : "you see"
+    },
+    "question05" : {
+      "question" : "heekíce",
+      "answer" : "see (3rd person)"
+    },
+    "question06" : {
+      "question" : "'ipí heekíce",
+      "answer" : "he/she/it sees"
+    },
+    "question07" : {
+      "question" : "hekcíix",
+      "answer" : "see (plural)"
+    },
+    "question08" : {
+      "question" : "nuun hekcíix",
+      "answer" : "we (exclusive) see"
+    },
+    "question09" : {
+      "question" : "kiye hekcíix",
+      "answer" : "we (inclusive) see"
+    },
+    "question10" : {
+      "question" : "'eetx hekcíix",
+      "answer" : "you (plural) see"
+    },
+    "question11" : {
+      "question" : "heekcíix",
+      "answer" : "see (3rd person plural)"
+    },
+    "question12" : {
+      "question" : "'imé heekcíix",
+      "answer" : "they (plural) sees"
+    },
+    "question13" : {
+      "question" : "wéewluq",
+      "answer" : "want"
+    },
+    "question14" : {
+      "question" : "wéewluqse",
+      "answer" : "want (1st, 2nd person)"
+    },
+    "question15" : {
+      "question" : "'iin wéewluqse",
+      "answer" : "I want"
+    },
+    "question16" : {
+      "question" : "'iim wéewluqse",
+      "answer" : "you want"
+    },
+    "question17" : {
+      "question" : "hiwéewluqse",
+      "answer" : "want (3rd person)"
+    },
+    "question18" : {
+      "question" : "'ipí hiwéewluqse",
+      "answer" : "he/she/it wants"
+    },
+    "question19" : {
+      "question" : "wéewluqsix",
+      "answer" : "want (plural)"
+    },
+    "question20" : {
+      "question" : "nuun wéewluqsix",
+      "answer" : "we (exclusive) want"
+    },
+    "question21" : {
+      "question" : "kiye wéewluqsix",
+      "answer" : "we (inclusive) want"
+    },
+    "question22" : {
+      "question" : "'eetx wéewluqsix",
+      "answer" : "you (plural) want"
+    },
+    "question23" : {
+      "question" : "hiwéewlusqix",
+      "answer" : "want (3rd person plural)"
+    },
+    "question24" : {
+      "question" : "'imé hiwéewluqsix",
+      "answer" : "they (plural) want"
+    },
+    "question25" : {
+      "question" : "k'óomay",
+      "answer" : "hurt, sick"
+    },
+    "question26" : {
+      "question" : "k'óomayca",
+      "answer" : "hurt, sick (1st, 2nd person)"
+    },
+    "question27" : {
+      "question" : "hik'óomyca",
+      "answer" : "hurt, sick (3rd person)"
+    },
+    "question28" : {
+      "question" : "k'óomaycix",
+      "answer" : "hurt, sick (plural)"
+    },
+    "question29" : {
+      "question" : "hik'óomaycix",
+      "answer" : "hurt, sick (3rd person plural)"
+    },
+    "question30" : {
+      "question" : "'iin k'óomyca",
+      "answer" : "I am hurt or sick"
+    },
+    "question31" : {
+      "question" : "'iim k'óomayca",
+      "answer" : "you are hurt or sick"
+    },
+    "question32" : {
+      "question" : "'ipí hik'óomayca",
+      "answer" : "he/she/it is hurt or sick"
+    },
+    "question33" : {
+      "question" : "nuun k'óomaycix",
+      "answer" : "we (exclusive) are hurt or sick"
+    },
+    "question34" : {
+      "question" : "kiye k'óomaycix",
+      "answer" : "we (inclusive) are hurt or sick"
+    },
+    "question35" : {
+      "question" : "'eetx k'óomaycix",
+      "answer" : "you (group) are sick"
+    },
+    "question36" : {
+      "question" : "'imé hik'óomaycix"
+    },
+    "question37" : {
+      "question" : "kuu",
+      "answer" : "go, do"
+    },
+    "question38" : {
+      "question" : "kúuse",
+      "answer" : "go, do (1st, 2nd person)"
+    },
+    "question39" : {
+      "question" : "hikúuse",
+      "answer" : "go, do (3rd person)"
+    },
+    "question40" : {
+      "question" : "kusíix",
+      "answer" : "go, do (plural)"
+    },
+    "question41" : {
+      "question" : "hikusíix",
+      "answer" : "go, do (3rd person plural)"
+    },
+    "question42" : {
+      "question" : "'iin kúuse",
+      "answer" : "I go or do"
+    },
+    "question43" : {
+      "question" : "'iim kúuse",
+      "answer" : "you go or do"
+    },
+    "question44" : {
+      "question" : "'ipí hikúuse",
+      "answer" : "he/she/it goes or does"
+    },
+    "question45" : {
+      "question" : "nuun kusíix",
+      "answer" : "we (exclusive) go or do"
+    },
+    "question46" : {
+      "question" : "kiye kusíix",
+      "answer" : "we (inclusive) go or do"
+    },
+    "question47" : {
+      "question" : "'eetx kusíix",
+      "answer" : "you (plural) go or do"
+    },
+    "question48" : {
+      "question" : "'imé hikusíix",
+      "answer" : "they (plural) go or do"
+    }
   },
   "page114" : {
-    "'iin wáaqca" : "I wake up",
-    "'ee wáaqca" : "you wake up"
+    "question01" : {
+      "question" : "'iin wáaqca",
+      "answer" : "I wake up"
+    },
+    "question02" : {
+      "question" : "'ee wáaqca",
+      "answer" : "you wake up"
+    }
   }
 }

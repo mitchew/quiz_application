@@ -59,7 +59,7 @@
 .question-area {
     display: flex;
     flex: 1 1 auto;
-    flex-flow: nowrap row;
+    flex-flow: nowrap column;
     margin: .2rem;
     padding: .3rem;
 }
@@ -88,3 +88,7 @@
 }
 
 /* lesson chooser styles */
+.lesson-container {
+    display: flex;
+    flex-flow: nowrap column;
+}

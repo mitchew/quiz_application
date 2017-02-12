@@ -1,22 +1,11 @@
 <!-- This view is the lesson chooser-->
 <div class="wrapper">
   <div class="chooser-header">
-
     <h1>Choose your lesson</h1>
-
   </div>
-
   <span class="course-name">NP-102</span>
-
   <div class="lesson-container">
-
     <a class="main-page" href="#!/main-page">Back to the main page</a>
     <a href="#!/main-page" class="lesson-button" ng-repeat="page in pages" ng-click="chooseLesson(page)">{{page}}</a>
-
   </div>
-
-  <p>
-    Showing of 'interpolate' filter:
-    {{ 'Current version is v%VERSION%.' | interpolate }}
-  </p>
 </div>

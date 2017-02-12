@@ -8,18 +8,20 @@
         <button class="character-button" ng-click="addCharacter('á')"><strong>á</strong></button>
         <button class="character-button" ng-click="addCharacter('é')"><strong>é</strong></button>
         <button class="character-button" ng-click="addCharacter('í')"><strong>í</strong></button>
+        <button class="character-button" ng-click="addCharacter('ó')"><strong>ó</strong></button>
         <button class="character-button" ng-click="addCharacter('ú')"><strong>ú</strong></button>
         <button class="character-button" ng-click="addCharacter('x̣')"><strong>x̣</strong></button>
     </div>
     <div class="question-area">
-        <p class="question" ng-model="question">{{question}}</p>
+        <p class="question" ng-model="question">Question: {{question}}</p>
+        <p class="answer" ng-model="answer">Answer: {{answer}}</p>
     </div>
     <div class="input-area">
         <div class="stretch">
             <input class="user-input" type="text" ng-model="userAnswer">
         </div>
         <div class="normal">
-            <button class="submit">Submit</button>
+            <button class="submit" ng-click="checkAnswer()">Submit</button>
         </div>
     </div>
 </div>
